@@ -1,0 +1,12 @@
+vpc_cidr_block     = "192.168.0.0/16"
+vpc_name           = "DevOps-VPC-Dev"
+subnet1_cidr_block = "192.168.1.0/24"
+subnet1_name       = "DevOps-Subnet1-Dev"
+subnet2_cidr_block = "192.168.2.0/24"
+subnet2_name       = "DevOps-Subnet2-Dev"
+igw_name           = "DevOps-IGW-Dev"
+route_table_name   = "DevOps-Route-Dev"
+key_name           = "example-key"
+public_key         = "ssh-rsa AAAAB3... user@domain.com"
+instance_type      = "t2.micro"
+volume_size        = 12
