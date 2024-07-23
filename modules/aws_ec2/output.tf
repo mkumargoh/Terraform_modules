@@ -5,3 +5,15 @@ output "instance_id" {
 output "private_key_path" {
   value = local_file.private_key.filename
 }
+output "availability_zone" {
+  value = aws_instance.test_instance.availability_zone
+}
+output "instance_name" {
+   value = aws_instance.test_instance.tags["Name"]
+}
+output "security_name" {
+  value = aws_security_group.test_security
+}
+output "volume_name" {
+  value = aws_instance.test_instance.volume_tags
+}

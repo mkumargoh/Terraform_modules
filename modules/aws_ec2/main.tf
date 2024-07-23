@@ -43,7 +43,7 @@ resource "aws_security_group" "test_security" {
   }
 
   tags = {
-    Name = "test-security-group"
+    Name = var.security_name
   }
 }
 
@@ -59,10 +59,10 @@ resource "aws_instance" "test_instance" {
     volume_type           = "gp3"
     delete_on_termination = true
     tags = {
-      Name = "Test-vol"
+      Name = "${var.instance_name}-vol"
     }
   }
   tags = {
-    Name = "Test-instance"
+    Name = var.instance_name
   }
 }

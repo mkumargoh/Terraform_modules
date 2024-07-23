@@ -1,4 +1,4 @@
-# Terraform Architectire for AWS 
+# Terraform Architectire for AWS VPC
 your-terraform-project/
 ├── Environment/
 │   ├── dev/

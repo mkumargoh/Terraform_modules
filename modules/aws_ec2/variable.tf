@@ -19,3 +19,10 @@ variable "volume_size" {
   type    = number
   default = 50
 }
+
+variable "instance_name" {
+  type = string
+}
+variable "security_name" {
+  type = string
+}
