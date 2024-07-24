@@ -17,3 +17,8 @@ output "security_name" {
 output "volume_name" {
   value = aws_instance.test_instance.volume_tags
 }
+
+output "security_group_id" {
+  description = "The ID of the security group"
+  value       = aws_security_group.test_security.id
+}
